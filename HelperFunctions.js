@@ -64,7 +64,7 @@ console.log("7B Daily wage using map : " + mapDayWithWageArr);
 
 //7c Show days when full time wage of 160 were earned using filter
 function fullTimeWage(dailyWage) {
-    return dailyWage.includes("160");
+    return dailyWage.toString().includes("160");
 }
 let fullDayWageArr = mapDayWithWageArr.filter(fullTimeWage);
 console.log("7C Daily wage filter when fulltime wage is 160 earned: " + fullDayWageArr);
